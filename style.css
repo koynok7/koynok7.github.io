@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+:root {
+  --grey: #222;
+  --clr-button: #fff;
+  --clr-navbar: #0f0f0f;
+  --clr-vonal: #0f0f0f;
+  --ff-szoveg: Josefin Sans;
+  --ff-header: Abril Fatface;
+  --ff-lista: Merriweather;
+}
+
+body {
+  margin-left: auto;
+  margin-right: auto;
+}
+nav {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  margin: 0 auto;
+  padding-top: 1rem;
+  width: 95%;
+  height: 3vw;
+  padding-bottom: 1%;
+  text-align: center;
+  background-color: var(--clr-navbar)
+}
+.navbutton {
+  color: var(--clr-button);
+  font-family: var(--ff-szoveg);
+  font-size: 3vw;
+  margin-left: 2vw;
+  text-decoration: none;
+}
+.navbutton:first-child {
+  margin-left: 0px;
+}
+/* = header
+-------------------------------------------------------------- */
+#header-container {
+  position: relative;
+}
+#header-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  width: 95%;
+}
+.header-anakin {
+  font-family: Abril Fatface;
+  color: var(--grey);
+}
+#ana1, #ana2 {
+  position: absolute;
+  left: 23%;
+}
+#ana1 {
+  font-size: 16px; /*tartalek*/ 
+  font-size: 3vw;
+  top: 60%;
+}
+#ana2 {
+  font-size: 16px; /*tartalek*/ 
+  font-size: 5vw;
+  top: 70%;
+}
+/* = header
+-------------------------------------------------------------- */
+
+main {
+  width: 55%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section {
+  font-family: var(--ff-szoveg);
+  margin-top: 1.25rem;
+}
+
+.quote-container {
+  z-index: -1;
+  color: var(--clr-button);
+  width: 75%;
+  position: absolute;
+  left: 12.5%;
+  height: 14vw;
+  background: grey;
+}
+blockquote::before {
+  content: '”';
+  transform: rotate(-180deg);
+  font-size: 14vw;
+  position: absolute;
+  bottom: 35%;
+  left: 0%;
+}
+blockquote {
+  font-family: var(--ff-header);
+  font-size: 4vw;
+  text-align: center;
+}
+#master {
+  height: 17vw;
+}
+#spacer {
+  height: 17vw;
+}
+@media (max-width: 40em) {
+  .quote-container {
+    height: 20vw;
+  }
+  #spacer {
+    height: 23vw;
+  }
+  nav {
+    padding-top: 1%;
+    padding-bottom: 4%;
+  }
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.vastag {
+  font-weight: bold;
+}
+
+.felirat{
+  font-family: var(--ff-lista);
+  font-size: 0.8rem;
+}
+
+.vonal {
+  height: 0.25em;
+  background: var(--clr-vonal);
+}
+
+li {
+  font-family: var(--ff-szoveg);
+  font-size: 0.9rem;
+  list-style-type: square;
+}
+.szoveg {
+  margin: 1rem auto;
+}
